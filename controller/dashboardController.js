@@ -15,6 +15,7 @@ module.exports = {
                     top5 += '   :::    ' + data['articles'][i]['title'];
                 }
                 console.log('i am here')
+                console.log('changed after git code')
                 // console.log(top5)
                 res.render('newsOlic24', { data: data.articles, top5News: top5 })
             })

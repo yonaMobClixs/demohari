@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+      .logo{
+          font-style: italic;
+          font-weight:2rem;
+          font-size:2rem;
+          padding: 0.2rem  0rem;
+      }
+      .marquee{
+          color: white;
+          font-size: 20px;
+          font-family: 'Times New Roman', Times, serif;
+      }
+      #breaking{
+          color:red;
+      }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link logo" href="#">NewsOlic24</a>
+      </li>
+    <!-- <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li> -->
+  </ul>
+  <p id="breaking"></p> <marquee class="marquee"><img src="../images/4.gif" width="60px" height="60px"><%=top5News%></marquee>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">Submit</button>
+    </form>
+    <a href='/logout'><button type="button" >Logout</button></a>
+  </div>
+</nav>
+<br>
+
+<div class="container-fluid">
+ 
+</div>
+
+</body>
+</html>

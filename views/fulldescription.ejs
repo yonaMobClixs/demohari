@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="../public/views/header.ejs" type='html/css'>
+  <script language="javascript" type="text/javascript"></script>
+  <style>  
+    .column-left {
+    float: left;
+    width: 33.333%;
+  }
+  
+  .column-right {
+    float: right;
+    width: 33.333%;
+  }
+  
+  .column-center {
+    display: inline-block;
+    width: 33.333%;
+  }
+  #title{
+      text-align:center;
+      font-weight:bold;
+      font-size: 2rem;
+  }
+  #description{
+      text-align:center;
+      font-weight:arial;
+      font-size: 1.6rem;
+  }
+  #displayimg{
+    height:350px;
+    width: 350px;
+  }
+  </style>
+    
+  </head>
+  <body>
+    <%- include('header.ejs')%>
+    <div class='container'>
+            <div class="container">
+                <div class="column-center" >
+                    <div class='row'>
+                        <img src="<%= data['urlToImage'] %>" id="displayimg">
+                    </div>
+                    <div id='title' class='row'>
+                        <%= data['title'] %>
+                    </div>
+                    <div id='description' class='row'>
+                        <%= data['description'] %>
+                    </div>
+                </div>
+                <div class="column-left"><img src="https://global-uploads.webflow.com/5b44edefca321a1e2d0c2aa6/5e3cada5679a5043ec9a6f47_Dimensions-Guide-Digital-Google-Products-Google-Pixel-4-Dimensions.svg"></div>
+                <!-- <div class="column-left" id="bothside"><img src="./images/modi.jpeg" alt="bjpCampn"></div> -->
+                <div class="column-right"><img src="https://global-uploads.webflow.com/5b44edefca321a1e2d0c2aa6/5e3cada5679a5043ec9a6f47_Dimensions-Guide-Digital-Google-Products-Google-Pixel-4-Dimensions.svg"></div>
+             </div>
+             
+    
+        </div>
+    </div>
+    
+
+  </body>
+</html>
